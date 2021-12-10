@@ -1,0 +1,47 @@
+{
+	"numbers": {
+		"countryCodes": [
+			"US",
+			"GB",
+			"FR"
+		]
+	},
+	"config": {
+		"passwordResetExpiryPeriodMinutes": 5,
+		"cryptoKey": {
+			"key": "XlkaAgKxJmRbLRO40QWAuMxLh9tyhZGlUL1UCzh3TII=",
+			"iv": "e6yy1VjqE6Rt4D6DsrQqUFPa7BWkvRsvho+TAYQ7bc0="
+		},
+		"telnyxApiKey": "CUrARcLg4Uqv/pWz72Z0XucZPVfvK4uTTGQwFuvI6BrVNctjhGMllUisa4SV6Qo4YRQueufNOxkgYCXr6w++rQ==",
+		"postmarkApiKey": "7yG0bnXSkl+X48YSsQf4FcQAfZFlNqk+ToqAiu1c+BqNAXfT6gUKioYTLPVOnco1"
+	},
+	"deploy": {
+		"development-local": {
+			"username": "root",
+			"password": "sOm1r0oTpWd",
+			"database": "veryfax",
+			"host": "127.0.0.1",
+			"dialect": "mysql",
+			"frontendHost": "http://localhost:3000",
+			"port": 3001
+		},
+		"development-heroku": {
+			"username": "root",
+			"password": "sOm1r0oTpWd",
+			"database": "veryfax",
+			"host": "173.249.57.83",
+			"dialect": "mysql",
+			"frontendHost": "https://app-veryfax.herokuapp.com",
+			"port": 80
+		},
+		"production": {
+			"username": "root",
+			"password": "sOm1r0oTpWd",
+			"database": "veryfax",
+			"host": "db.veryfax.com",
+			"dialect": "mysql",
+			"frontendHost": "https://app.veryfax.com",
+			"port": 80
+		}
+	}
+}

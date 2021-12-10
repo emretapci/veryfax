@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+  database:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    container_name: veryfax_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=sOm1r0oTpWd
+      - MYSQL_ROOT_HOST=%
+    restart: always
+    ports:
+      - 3306:3306
